@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2022.2.2),
-    on Wed Nov  9 11:57:42 2022
+This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
+    on November 09, 2022, at 14:28
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -34,7 +34,7 @@ from psychopy.hardware import keyboard
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 # Store info about the experiment session
-psychopyVersion = '2022.2.2'
+psychopyVersion = '2022.2.4'
 expName = 'mini_mfe_online'  # from the Builder filename that created this script
 expInfo = {
     'id': '',
@@ -53,7 +53,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['id'], expName, expIn
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/kihossei/Documents/GitHub/memory-for-error-dataset/materials/experiments/mini_mfe_online/mini_mfe_online_lastrun.py',
+    originPath='C:\\Users\\kihossei\\Documents\\GitHub\\mfe-online-dataset\\materials\\PsychopyTask\\mini_mfe_online\\mini_mfe_online_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -102,6 +102,146 @@ defaultKeyboard = keyboard.Keyboard(backend='iohub')
 
 win.mouseVisible = False #hide mouse cursor
 
+
+# --- Initialize components for Routine "zoomSetup1" ---
+headerZoom1 = visual.TextStim(win=win, name='headerZoom1',
+    text='Welcome!\n',
+    font='Arial',
+    pos=(0, 0.3), height=0.08, wrapWidth=1.1, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+zoomSetupText1 = visual.TextStim(win=win, name='zoomSetupText1',
+    text='You will record yourself and your screen during these tasks and games.\n\nPress the ESC key once to exit full-screen mode.\n\nLog into Zoom using your FIU student credentials.\n\nStart a meeting\n(you’re the only person there).\n\nJoin with Computer Audio.\n\nYou do not need to turn on your camera.',
+    font='Arial',
+    pos=(-0.3, -0.05), height=0.03, wrapWidth=0.6, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-1.0);
+joinAudio = visual.ImageStim(
+    win=win,
+    name='joinAudio', 
+    image='resources/zoom/join-audio.jpg', mask=None, anchor='center',
+    ori=0.0, pos=(0.3, -0.05), size=(0.4, 0.24),
+    color=[1,1,1], colorSpace='rgb', opacity=None,
+    flipHoriz=False, flipVert=False,
+    texRes=512.0, interpolate=True, depth=-2.0)
+instructContinue10 = visual.TextStim(win=win, name='instructContinue10',
+    text='- — -\n\nPress the space key when you are in your Zoom room.',
+    font='Arial',
+    pos=(0, -0.35), height=0.02, wrapWidth=1.1, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-3.0);
+key_resp_26 = keyboard.Keyboard()
+
+# --- Initialize components for Routine "zoomSetup2" ---
+zoomSetupText2 = visual.TextStim(win=win, name='zoomSetupText2',
+    text='Share your screen by clicking “Share Screen” on the meeting controls.\n\nFor your privacy, only share this internet browser.\n\nYou should now see this screen, plus the floating meeting controls.',
+    font='Arial',
+    pos=(0, -0.05), height=0.03, wrapWidth=1.1, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+meetingControls = visual.ImageStim(
+    win=win,
+    name='meetingControls', 
+    image='resources/zoom/meeting-controls.jpg', mask=None, anchor='center',
+    ori=0.0, pos=(0, 0.2), size=(1, 0.029),
+    color=[1,1,1], colorSpace='rgb', opacity=None,
+    flipHoriz=False, flipVert=False,
+    texRes=512.0, interpolate=True, depth=-1.0)
+instructContinue11 = visual.TextStim(win=win, name='instructContinue11',
+    text='- — -\n\nPress the space key when you are sharing your screen with Zoom.',
+    font='Arial',
+    pos=(0, -0.35), height=0.02, wrapWidth=1.1, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-2.0);
+key_resp_27 = keyboard.Keyboard()
+
+# --- Initialize components for Routine "zoomSetup3" ---
+zoomSetupText3 = visual.TextStim(win=win, name='zoomSetupText3',
+    text='Check that Zoom is picking up sound from your microphone.\n\nWhen you talk, the microphone icon on the left-hand side of the meeting controls should light up in green.',
+    font='Arial',
+    pos=(0, -0.05), height=0.03, wrapWidth=1.1, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+microphoneImage = visual.ImageStim(
+    win=win,
+    name='microphoneImage', 
+    image='resources/zoom/microphone.jpg', mask=None, anchor='center',
+    ori=0.0, pos=(0, 0.2), size=(0.15, 0.09),
+    color=[1,1,1], colorSpace='rgb', opacity=None,
+    flipHoriz=False, flipVert=False,
+    texRes=512.0, interpolate=True, depth=-1.0)
+instructContinue12 = visual.TextStim(win=win, name='instructContinue12',
+    text='- — -\n\nPress the space key when you have confirmed that your microphone is working.',
+    font='Arial',
+    pos=(0, -0.35), height=0.02, wrapWidth=1.1, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-2.0);
+key_resp_28 = keyboard.Keyboard()
+
+# --- Initialize components for Routine "zoomSetup4" ---
+zoomSetupText4 = visual.TextStim(win=win, name='zoomSetupText4',
+    text='Start recording the Zoom meeting.\n\nClick on More (⋅⋅⋅) at the far right of the meeting controls.\n\nSelect “Record on this Computer.”',
+    font='Arial',
+    pos=(-0.3, 0.05), height=0.03, wrapWidth=0.6, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+recordToComp = visual.ImageStim(
+    win=win,
+    name='recordToComp', 
+    image='resources/zoom/record-to-comp.jpg', mask=None, anchor='center',
+    ori=0.0, pos=(0.3, 0.05), size=(0.4, 0.62),
+    color=[1,1,1], colorSpace='rgb', opacity=None,
+    flipHoriz=False, flipVert=False,
+    texRes=512.0, interpolate=True, depth=-1.0)
+instructContinue13 = visual.TextStim(win=win, name='instructContinue13',
+    text='- — -\n\nPress the space key when you see the flashing red dot in the green “screen-sharing” bar.',
+    font='Arial',
+    pos=(0, -0.35), height=0.02, wrapWidth=1.1, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-2.0);
+greenConfirmBar = visual.ImageStim(
+    win=win,
+    name='greenConfirmBar', 
+    image='resources/zoom/green-confirm-bar.jpg', mask=None, anchor='center',
+    ori=0.0, pos=(-0.3, -0.15), size=(0.3, 0.032),
+    color=[1,1,1], colorSpace='rgb', opacity=None,
+    flipHoriz=False, flipVert=False,
+    texRes=512.0, interpolate=True, depth=-3.0)
+key_resp_29 = keyboard.Keyboard()
+
+# --- Initialize components for Routine "zoomSetup5" ---
+zoomSetupText5 = visual.TextStim(win=win, name='zoomSetupText5',
+    text='If you are seeing your own video, click on More (⋅⋅⋅) at the far right of the meeting controls. Select “Hide Video Panel.”\n\nAlso, hide the meeting controls so they don’t block part of your screen.\n\nClick again on More (⋅⋅⋅) at the far right of the meeting controls.\n\nSelect “Hide Floating Meeting Controls.”',
+    font='Arial',
+    pos=(-0.3, 0), height=0.03, wrapWidth=0.6, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+hideControls = visual.ImageStim(
+    win=win,
+    name='hideControls', 
+    image='resources/zoom/hide-controls.jpg', mask=None, anchor='center',
+    ori=0.0, pos=(0.3, 0.05), size=(0.4, 0.594),
+    color=[1,1,1], colorSpace='rgb', opacity=None,
+    flipHoriz=False, flipVert=False,
+    texRes=512.0, interpolate=True, depth=-1.0)
+instructContinue14 = visual.TextStim(win=win, name='instructContinue14',
+    text='- — -\n\nPress the space key when you only see this screen but you know Zoom is recording your voice and your screen.\nYou will now re-enter full-screen mode.',
+    font='Arial',
+    pos=(0, -0.35), height=0.02, wrapWidth=1.1, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-2.0);
+key_resp_30 = keyboard.Keyboard()
 
 # --- Initialize components for Routine "welcome" ---
 welcome_text = visual.TextStim(win=win, name='welcome_text',
@@ -801,6 +941,623 @@ for thisComponent in setupComponents:
 # the Routine "setup" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
+# --- Prepare to start Routine "zoomSetup1" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+key_resp_26.keys = []
+key_resp_26.rt = []
+_key_resp_26_allKeys = []
+# keep track of which components have finished
+zoomSetup1Components = [headerZoom1, zoomSetupText1, joinAudio, instructContinue10, key_resp_26]
+for thisComponent in zoomSetup1Components:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "zoomSetup1" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *headerZoom1* updates
+    if headerZoom1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        headerZoom1.frameNStart = frameN  # exact frame index
+        headerZoom1.tStart = t  # local t and not account for scr refresh
+        headerZoom1.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(headerZoom1, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'headerZoom1.started')
+        headerZoom1.setAutoDraw(True)
+    
+    # *zoomSetupText1* updates
+    if zoomSetupText1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        zoomSetupText1.frameNStart = frameN  # exact frame index
+        zoomSetupText1.tStart = t  # local t and not account for scr refresh
+        zoomSetupText1.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(zoomSetupText1, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'zoomSetupText1.started')
+        zoomSetupText1.setAutoDraw(True)
+    
+    # *joinAudio* updates
+    if joinAudio.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        joinAudio.frameNStart = frameN  # exact frame index
+        joinAudio.tStart = t  # local t and not account for scr refresh
+        joinAudio.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(joinAudio, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'joinAudio.started')
+        joinAudio.setAutoDraw(True)
+    
+    # *instructContinue10* updates
+    if instructContinue10.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        instructContinue10.frameNStart = frameN  # exact frame index
+        instructContinue10.tStart = t  # local t and not account for scr refresh
+        instructContinue10.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(instructContinue10, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'instructContinue10.started')
+        instructContinue10.setAutoDraw(True)
+    
+    # *key_resp_26* updates
+    waitOnFlip = False
+    if key_resp_26.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_26.frameNStart = frameN  # exact frame index
+        key_resp_26.tStart = t  # local t and not account for scr refresh
+        key_resp_26.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_26, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'key_resp_26.started')
+        key_resp_26.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_26.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_26.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_26.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_26.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_26_allKeys.extend(theseKeys)
+        if len(_key_resp_26_allKeys):
+            key_resp_26.keys = _key_resp_26_allKeys[-1].name  # just the last key pressed
+            key_resp_26.rt = _key_resp_26_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in zoomSetup1Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "zoomSetup1" ---
+for thisComponent in zoomSetup1Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_26.keys in ['', [], None]:  # No response was made
+    key_resp_26.keys = None
+thisExp.addData('key_resp_26.keys',key_resp_26.keys)
+if key_resp_26.keys != None:  # we had a response
+    thisExp.addData('key_resp_26.rt', key_resp_26.rt)
+thisExp.nextEntry()
+# the Routine "zoomSetup1" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# --- Prepare to start Routine "zoomSetup2" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+key_resp_27.keys = []
+key_resp_27.rt = []
+_key_resp_27_allKeys = []
+# keep track of which components have finished
+zoomSetup2Components = [zoomSetupText2, meetingControls, instructContinue11, key_resp_27]
+for thisComponent in zoomSetup2Components:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "zoomSetup2" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *zoomSetupText2* updates
+    if zoomSetupText2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        zoomSetupText2.frameNStart = frameN  # exact frame index
+        zoomSetupText2.tStart = t  # local t and not account for scr refresh
+        zoomSetupText2.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(zoomSetupText2, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'zoomSetupText2.started')
+        zoomSetupText2.setAutoDraw(True)
+    
+    # *meetingControls* updates
+    if meetingControls.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        meetingControls.frameNStart = frameN  # exact frame index
+        meetingControls.tStart = t  # local t and not account for scr refresh
+        meetingControls.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(meetingControls, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'meetingControls.started')
+        meetingControls.setAutoDraw(True)
+    
+    # *instructContinue11* updates
+    if instructContinue11.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        instructContinue11.frameNStart = frameN  # exact frame index
+        instructContinue11.tStart = t  # local t and not account for scr refresh
+        instructContinue11.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(instructContinue11, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'instructContinue11.started')
+        instructContinue11.setAutoDraw(True)
+    
+    # *key_resp_27* updates
+    waitOnFlip = False
+    if key_resp_27.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_27.frameNStart = frameN  # exact frame index
+        key_resp_27.tStart = t  # local t and not account for scr refresh
+        key_resp_27.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_27, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'key_resp_27.started')
+        key_resp_27.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_27.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_27.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_27.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_27.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_27_allKeys.extend(theseKeys)
+        if len(_key_resp_27_allKeys):
+            key_resp_27.keys = _key_resp_27_allKeys[-1].name  # just the last key pressed
+            key_resp_27.rt = _key_resp_27_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in zoomSetup2Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "zoomSetup2" ---
+for thisComponent in zoomSetup2Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_27.keys in ['', [], None]:  # No response was made
+    key_resp_27.keys = None
+thisExp.addData('key_resp_27.keys',key_resp_27.keys)
+if key_resp_27.keys != None:  # we had a response
+    thisExp.addData('key_resp_27.rt', key_resp_27.rt)
+thisExp.nextEntry()
+# the Routine "zoomSetup2" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# --- Prepare to start Routine "zoomSetup3" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+key_resp_28.keys = []
+key_resp_28.rt = []
+_key_resp_28_allKeys = []
+# keep track of which components have finished
+zoomSetup3Components = [zoomSetupText3, microphoneImage, instructContinue12, key_resp_28]
+for thisComponent in zoomSetup3Components:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "zoomSetup3" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *zoomSetupText3* updates
+    if zoomSetupText3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        zoomSetupText3.frameNStart = frameN  # exact frame index
+        zoomSetupText3.tStart = t  # local t and not account for scr refresh
+        zoomSetupText3.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(zoomSetupText3, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'zoomSetupText3.started')
+        zoomSetupText3.setAutoDraw(True)
+    
+    # *microphoneImage* updates
+    if microphoneImage.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        microphoneImage.frameNStart = frameN  # exact frame index
+        microphoneImage.tStart = t  # local t and not account for scr refresh
+        microphoneImage.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(microphoneImage, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'microphoneImage.started')
+        microphoneImage.setAutoDraw(True)
+    
+    # *instructContinue12* updates
+    if instructContinue12.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        instructContinue12.frameNStart = frameN  # exact frame index
+        instructContinue12.tStart = t  # local t and not account for scr refresh
+        instructContinue12.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(instructContinue12, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'instructContinue12.started')
+        instructContinue12.setAutoDraw(True)
+    
+    # *key_resp_28* updates
+    waitOnFlip = False
+    if key_resp_28.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_28.frameNStart = frameN  # exact frame index
+        key_resp_28.tStart = t  # local t and not account for scr refresh
+        key_resp_28.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_28, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'key_resp_28.started')
+        key_resp_28.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_28.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_28.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_28.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_28.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_28_allKeys.extend(theseKeys)
+        if len(_key_resp_28_allKeys):
+            key_resp_28.keys = _key_resp_28_allKeys[-1].name  # just the last key pressed
+            key_resp_28.rt = _key_resp_28_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in zoomSetup3Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "zoomSetup3" ---
+for thisComponent in zoomSetup3Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_28.keys in ['', [], None]:  # No response was made
+    key_resp_28.keys = None
+thisExp.addData('key_resp_28.keys',key_resp_28.keys)
+if key_resp_28.keys != None:  # we had a response
+    thisExp.addData('key_resp_28.rt', key_resp_28.rt)
+thisExp.nextEntry()
+# the Routine "zoomSetup3" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# --- Prepare to start Routine "zoomSetup4" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+key_resp_29.keys = []
+key_resp_29.rt = []
+_key_resp_29_allKeys = []
+# keep track of which components have finished
+zoomSetup4Components = [zoomSetupText4, recordToComp, instructContinue13, greenConfirmBar, key_resp_29]
+for thisComponent in zoomSetup4Components:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "zoomSetup4" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *zoomSetupText4* updates
+    if zoomSetupText4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        zoomSetupText4.frameNStart = frameN  # exact frame index
+        zoomSetupText4.tStart = t  # local t and not account for scr refresh
+        zoomSetupText4.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(zoomSetupText4, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'zoomSetupText4.started')
+        zoomSetupText4.setAutoDraw(True)
+    
+    # *recordToComp* updates
+    if recordToComp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        recordToComp.frameNStart = frameN  # exact frame index
+        recordToComp.tStart = t  # local t and not account for scr refresh
+        recordToComp.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(recordToComp, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'recordToComp.started')
+        recordToComp.setAutoDraw(True)
+    
+    # *instructContinue13* updates
+    if instructContinue13.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        instructContinue13.frameNStart = frameN  # exact frame index
+        instructContinue13.tStart = t  # local t and not account for scr refresh
+        instructContinue13.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(instructContinue13, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'instructContinue13.started')
+        instructContinue13.setAutoDraw(True)
+    
+    # *greenConfirmBar* updates
+    if greenConfirmBar.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        greenConfirmBar.frameNStart = frameN  # exact frame index
+        greenConfirmBar.tStart = t  # local t and not account for scr refresh
+        greenConfirmBar.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(greenConfirmBar, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'greenConfirmBar.started')
+        greenConfirmBar.setAutoDraw(True)
+    
+    # *key_resp_29* updates
+    waitOnFlip = False
+    if key_resp_29.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_29.frameNStart = frameN  # exact frame index
+        key_resp_29.tStart = t  # local t and not account for scr refresh
+        key_resp_29.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_29, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'key_resp_29.started')
+        key_resp_29.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_29.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_29.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_29.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_29.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_29_allKeys.extend(theseKeys)
+        if len(_key_resp_29_allKeys):
+            key_resp_29.keys = _key_resp_29_allKeys[-1].name  # just the last key pressed
+            key_resp_29.rt = _key_resp_29_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in zoomSetup4Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "zoomSetup4" ---
+for thisComponent in zoomSetup4Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_29.keys in ['', [], None]:  # No response was made
+    key_resp_29.keys = None
+thisExp.addData('key_resp_29.keys',key_resp_29.keys)
+if key_resp_29.keys != None:  # we had a response
+    thisExp.addData('key_resp_29.rt', key_resp_29.rt)
+thisExp.nextEntry()
+# the Routine "zoomSetup4" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# --- Prepare to start Routine "zoomSetup5" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+key_resp_30.keys = []
+key_resp_30.rt = []
+_key_resp_30_allKeys = []
+# keep track of which components have finished
+zoomSetup5Components = [zoomSetupText5, hideControls, instructContinue14, key_resp_30]
+for thisComponent in zoomSetup5Components:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "zoomSetup5" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *zoomSetupText5* updates
+    if zoomSetupText5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        zoomSetupText5.frameNStart = frameN  # exact frame index
+        zoomSetupText5.tStart = t  # local t and not account for scr refresh
+        zoomSetupText5.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(zoomSetupText5, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'zoomSetupText5.started')
+        zoomSetupText5.setAutoDraw(True)
+    
+    # *hideControls* updates
+    if hideControls.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        hideControls.frameNStart = frameN  # exact frame index
+        hideControls.tStart = t  # local t and not account for scr refresh
+        hideControls.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(hideControls, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'hideControls.started')
+        hideControls.setAutoDraw(True)
+    
+    # *instructContinue14* updates
+    if instructContinue14.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        instructContinue14.frameNStart = frameN  # exact frame index
+        instructContinue14.tStart = t  # local t and not account for scr refresh
+        instructContinue14.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(instructContinue14, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'instructContinue14.started')
+        instructContinue14.setAutoDraw(True)
+    
+    # *key_resp_30* updates
+    waitOnFlip = False
+    if key_resp_30.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_30.frameNStart = frameN  # exact frame index
+        key_resp_30.tStart = t  # local t and not account for scr refresh
+        key_resp_30.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_30, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'key_resp_30.started')
+        key_resp_30.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_30.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_30.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_30.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_30.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_30_allKeys.extend(theseKeys)
+        if len(_key_resp_30_allKeys):
+            key_resp_30.keys = _key_resp_30_allKeys[-1].name  # just the last key pressed
+            key_resp_30.rt = _key_resp_30_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in zoomSetup5Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "zoomSetup5" ---
+for thisComponent in zoomSetup5Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_30.keys in ['', [], None]:  # No response was made
+    key_resp_30.keys = None
+thisExp.addData('key_resp_30.keys',key_resp_30.keys)
+if key_resp_30.keys != None:  # we had a response
+    thisExp.addData('key_resp_30.rt', key_resp_30.rt)
+thisExp.nextEntry()
+# the Routine "zoomSetup5" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
 # --- Prepare to start Routine "welcome" ---
 continueRoutine = True
 routineForceEnded = False
@@ -1247,7 +2004,7 @@ while continueRoutine:
         win.callOnFlip(insructInconRight_keyResp.clock.reset)  # t=0 on next screen flip
         win.callOnFlip(insructInconRight_keyResp.clearEvents, eventType='keyboard')  # clear events on next screen flip
     if insructInconRight_keyResp.status == STARTED and not waitOnFlip:
-        theseKeys = insructInconRight_keyResp.getKeys(keyList=['8'], waitRelease=False)
+        theseKeys = insructInconRight_keyResp.getKeys(keyList=['k'], waitRelease=False)
         _insructInconRight_keyResp_allKeys.extend(theseKeys)
         if len(_insructInconRight_keyResp_allKeys):
             insructInconRight_keyResp.keys = _insructInconRight_keyResp_allKeys[-1].name  # just the last key pressed
@@ -1412,7 +2169,7 @@ for thisComponent in instructInconLeftComponents:
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-prac_block_loop = data.TrialHandler(nReps=999, method='random', 
+prac_block_loop = data.TrialHandler(nReps=0, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('blockSelect_practice.csv'),
     seed=None, name='prac_block_loop')
@@ -1901,13 +2658,13 @@ for thisPrac_block_loop in prac_block_loop:
         trialNum = trialNum + 1 #iterate trial number for this block
         
         if prac_stim_keyResp.keys: #if at least one response was made this trial
-            if prac_stim_keyResp.keys[0] == '1': #if the FIRST button pressed was a '1'
+            if prac_stim_keyResp.keys[0] == 's': #if the FIRST button pressed was a '1'
                 if target == 'left': #if a left target stim was shown this trial
                     accuracy = 1 #mark this trial as correct
                     numCorr = numCorr +1 #iterate number of correct responses for this block
                 elif target == 'right': #if a right target stim was shown this trial
                     accuracy = 0 #mark this trial as an error
-            elif prac_stim_keyResp.keys[0] == '8': #if the FIRST button pressed was a '8'
+            elif prac_stim_keyResp.keys[0] == 'k': #if the FIRST button pressed was a '8'
                 if target == 'right': #if a right target stim was shown this trial
                     accuracy = 1 #mark this trial as correct
                     numCorr = numCorr +1 #iterate number of correct responses for this block
@@ -2045,11 +2802,11 @@ for thisPrac_block_loop in prac_block_loop:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 999 repeats of 'prac_block_loop'
+# completed 0 repeats of 'prac_block_loop'
 
 
 # set up handler to look after randomisation of conditions etc
-task_block_loop = data.TrialHandler(nReps=1.0, method='random', 
+task_block_loop = data.TrialHandler(nReps=0.0, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('blockSelect.csv'),
     seed=None, name='task_block_loop')
@@ -2567,13 +3324,13 @@ for thisTask_block_loop in task_block_loop:
         trialNum = trialNum + 1 #iterate trial number for this block
         
         if task1_stim_keyResp.keys: #if at least one response was made this trial
-            if task1_stim_keyResp.keys[0] == '1': #if the FIRST button pressed was a '1'
+            if task1_stim_keyResp.keys[0] == 's': #if the FIRST button pressed was a '1'
                 if target == 'left': #if a left target stim was shown this trial
                     accuracy = 1 #mark this trial as correct
                     numCorr = numCorr +1 #iterate number of correct responses for this block
                 elif target == 'right': #if a right target stim was shown this trial
                     accuracy = 0 #mark this trial as an error
-            elif task1_stim_keyResp.keys[0] == '8': #if the FIRST button pressed was a '8'
+            elif task1_stim_keyResp.keys[0] == 'k': #if the FIRST button pressed was a '8'
                 if target == 'right': #if a right target stim was shown this trial
                     accuracy = 1 #mark this trial as correct
                     numCorr = numCorr +1 #iterate number of correct responses for this block
@@ -2720,7 +3477,7 @@ for thisTask_block_loop in task_block_loop:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 1.0 repeats of 'task_block_loop'
+# completed 0.0 repeats of 'task_block_loop'
 
 
 # --- Prepare to start Routine "fixation1" ---
@@ -3374,19 +4131,9 @@ for thisSurprise_block_loop in surprise_block_loop:
         instructsurpA1_right.setPos((0.6, -0.03))
         instructsurpA1_right.setText(instructsurpA1)
         instructsurpA2_left.setText(instructsurpA2)
-        # Run 'Begin Routine' code from stimulus_trig_code
-        #set stimTriggerSent to false at the start of the trial. this way
-        #when the stimulus is shown, we can change it to True. This variable
-        #is used to ensure we only throw the stimulus EEG trigger once.
-        stimulusTriggerSent = False
         surprise_key_resp.keys = []
         surprise_key_resp.rt = []
         _surprise_key_resp_allKeys = []
-        # Run 'Begin Routine' code from response_trigger_code
-        #clear out the keys_counbted variable at the start of the trial
-        #this variable will hold the keys that have had eeg triggers thrown
-        #already within a given trial.
-        keys_counted = []
         # keep track of which components have finished
         surpriseTaskComponents = [stimulus, instructsurpA1_right, instructsurpA2_left, surprise_key_resp]
         for thisComponent in surpriseTaskComponents:
@@ -3442,14 +4189,6 @@ for thisSurprise_block_loop in surprise_block_loop:
                 # add timestamp to datafile
                 thisExp.timestampOnFlip(win, 'instructsurpA2_left.started')
                 instructsurpA2_left.setAutoDraw(True)
-            # Run 'Each Frame' code from stimulus_trig_code
-            
-            if stimulus.status == STARTED and not stimulusTriggerSent:
-                stimulusTriggerSent = True #switch stimTriggerSent to True so that the stimulus eeg trigger will not be sent again this trial
-                port.write([0x1F]) #hexcode = 31; eeg trigger sent
-                time.sleep(PulseWidth) #how long to wait before clearing trigger port
-                port.write([0x00]) #clear trigger port by sending hexcode = 0
-            
             
             # *surprise_key_resp* updates
             waitOnFlip = False
@@ -3467,35 +4206,13 @@ for thisSurprise_block_loop in surprise_block_loop:
                 win.callOnFlip(surprise_key_resp.clock.reset)  # t=0 on next screen flip
                 win.callOnFlip(surprise_key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
             if surprise_key_resp.status == STARTED and not waitOnFlip:
-                theseKeys = surprise_key_resp.getKeys(keyList=['1','8'], waitRelease=False)
+                theseKeys = surprise_key_resp.getKeys(keyList=['s','k'], waitRelease=False)
                 _surprise_key_resp_allKeys.extend(theseKeys)
                 if len(_surprise_key_resp_allKeys):
                     surprise_key_resp.keys = _surprise_key_resp_allKeys[-1].name  # just the last key pressed
                     surprise_key_resp.rt = _surprise_key_resp_allKeys[-1].rt
                     # a response ends the routine
                     continueRoutine = False
-            # Run 'Each Frame' code from response_trigger_code
-            if surprise_key_resp.keys and len(surprise_key_resp.keys) > len(keys_counted):# A key response has been made but we haven't yet "counted" it
-                keys_counted.append(surprise_key_resp.keys[-1]) #add this response to list of keys pressed this trial
-                if len(surprise_key_resp.keys) < 2: #if this is  the first response
-                    if surprise_key_resp.keys[-1] == '1':
-                        port.write([0x29]) # 41
-                        time.sleep(PulseWidth)
-                        port.write([0x00])
-                    elif surprise_key_resp.keys[-1] == '8': 
-                        port.write([0x2A])# 42
-                        time.sleep(PulseWidth)
-                        port.write([0x00])
-                elif len(surprise_key_resp.keys) >= 2: #if this is NOT the first response
-                    if surprise_key_resp.keys[-1] == '1':
-                        port.write([0x33]) # 51
-                        time.sleep(PulseWidth)
-                        port.write([0x00])
-                    elif surprise_key_resp.keys[-1] == '8': 
-                        port.write([0x34])# 52
-                        time.sleep(PulseWidth)
-                        port.write([0x00])
-            
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -3525,17 +4242,6 @@ for thisSurprise_block_loop in surprise_block_loop:
         trials.addData('surprise_key_resp.keys',surprise_key_resp.keys)
         if surprise_key_resp.keys != None:  # we had a response
             trials.addData('surprise_key_resp.rt', surprise_key_resp.rt)
-        # Run 'End Routine' code from response_trigger_code
-        
-        #instead of including here, should instead include something
-        #in each frame section that computes t at stim onset and then
-        #when thisISI - t <= .05 (50 ms) and then at that point we throw
-        #the no-resp marker...
-        
-        #if not prac_stim_keyResp.keys or len(prac_stim_keyResp.keys) == 0:
-        #            port.write([0x63]) # 99
-        #            time.sleep(PulseWidth)
-        #            port.write([0x00])
         # the Routine "surpriseTask" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         thisExp.nextEntry()

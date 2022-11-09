@@ -1,0 +1,21 @@
+2.4156 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+8.0231 	INFO 	Loaded monitor calibration from ['2022_11_09 13:09']
+8.0239 	ERROR 	'0.5000, 0.5000, 0.5000' is not a valid rgb color
+8.0309 	WARNING 	User requested fullscreen with size [1440  900], but screen is actually [1920, 1080]. Using actual size
+9.6036 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000023A05D95D90>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000023A06276E20>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.6038 	EXP 	window1: mouseVisible = True
+9.6041 	EXP 	window1: mouseVisible = False
+9.6042 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+9.6042 	EXP 	window1: recordFrameIntervals = False
+9.7691 	EXP 	window1: recordFrameIntervals = True
+9.9528 	EXP 	Screen (0) actual frame rate measured at 60.02Hz
+9.9529 	EXP 	window1: recordFrameIntervals = False
+12.0867 	INFO 	keyboard.Keyboard is using iohub backend.
+12.0867 	EXP 	window1: mouseVisible = False
+12.1640 	EXP 	Created headerZoom1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.08, italic=False, languageStyle='LTR', name='headerZoom1', opacity=1.0, ori=0.0, pos=array([0. , 0.3]), rgb=UNKNOWN, text='First…', units='height', win=Window(...), wrapWidth=1.1)
+12.2066 	EXP 	Created zoomSetupText1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='zoomSetupText1', opacity=1.0, ori=0.0, pos=array([-0.3 , -0.05]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=0.6)
+12.2076 	DEPRECATION 	Couldn't find image resources/zoom/join-audio.jpg; check path? (tried: C:\Users\kihossei\Documents\GitHub\mfe-online-dataset\materials\PsychopyTask\mini_mfe_online\resources\zoom\join-audio.jpg)
+12.3683 	EXP 	window1: mouseVisible = True
+12.3693 	DEBUG 	Saving data for mini_mfe_online ExperimentHandler
+12.3711 	INFO 	saved data to C:\Users\kihossei\Documents\GitHub\mfe-online-dataset\materials\PsychopyTask\mini_mfe_online\data/_mini_mfe_online_2022-11-09_13h25.52.945.psydat
+12.3735 	INFO 	saved data to 'C:\\Users\\kihossei\\Documents\\GitHub\\mfe-online-dataset\\materials\\PsychopyTask\\mini_mfe_online\\data/_mini_mfe_online_2022-11-09_13h25.52.945.csv'
