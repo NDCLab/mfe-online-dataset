@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
-    on November 09, 2022, at 14:28
+    on November 09, 2022, at 21:15
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -573,6 +573,16 @@ prac_pressContinue = visual.TextStim(win=win, name='prac_pressContinue',
     depth=-2.0);
 prac_blockFeed_keyResp = keyboard.Keyboard()
 
+# --- Initialize components for Routine "redCap1" ---
+redCap1_text = visual.TextStim(win=win, name='redCap1_text',
+    text="\nPlease return to the questionnaires tab of your browser and answer the questions of a questionnaire.\n\nPlease do not close this tab as you will need to return to this tab after you complete answering the questions of the questionnaire. \n\n-----------------------------------------\n\nDid you answer the questions of the questionnaire?\n\nIf yes, please press the 'K' key to continue\n",
+    font='Open Sans',
+    pos=(0, 0), height=0.04, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+redcap1_key = keyboard.Keyboard()
+
 # --- Initialize components for Routine "task_blockReminders" ---
 # Run 'Begin Experiment' code from task_blockReminder_code
 #initialize the following variables at the start of experiment
@@ -779,6 +789,16 @@ bother_text_box = visual.TextBox2(
 )
 botherRate_key_resp = keyboard.Keyboard()
 
+# --- Initialize components for Routine "redCap2" ---
+redCap2_tex = visual.TextStim(win=win, name='redCap2_tex',
+    text="\nPlease return to the questionnaires tab of your browser and answer the questions of two questionnaires.\n\nPlease do not close this tab as you will need to return to this tab after you complete answering the questions of the questionnaires. \n\n-----------------------------------------\n\nDid you answer the questions of the two questionnaires?\n\nIf yes, please press the 'K' key to continue\n",
+    font='Open Sans',
+    pos=(0, 0), height=0.04, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+redcap2_key = keyboard.Keyboard()
+
 # --- Initialize components for Routine "surpriseInstruct" ---
 instruct_surprise1 = visual.TextStim(win=win, name='instruct_surprise1',
     text='You will now begin a task in which you will be shown images of faces and asked if you have seen them before or not.\n\nFor each face displayed, you must indicate whether you saw it in the previous game (OLD face) or if you did not see it in the previous game (NEW face).\n\nSo, if you think that you have seen the face displayed in the previous game, select "Old" as your response or if you think you have not seen the face in the previous game, select "New" as your response.\n\nPress the \'K\' key to continue',
@@ -790,13 +810,23 @@ instruct_surprise1 = visual.TextStim(win=win, name='instruct_surprise1',
 instruct_surp1_key_resp = keyboard.Keyboard()
 
 # --- Initialize components for Routine "instructSurpriseTask2_2" ---
+# Run 'Begin Experiment' code from code_5
+#initialize the following variables at the start of experiment
+surp_blockCounter = 0
+task_blockText_2 = visual.TextStim(win=win, name='task_blockText_2',
+    text='',
+    font='Arial',
+    pos=(0, .3), height=0.06, wrapWidth=1.3, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-1.0);
 instructMainTask_text = visual.TextStim(win=win, name='instructMainTask_text',
     text='',
     font='Arial',
     pos=(0, 0), height=0.04, wrapWidth=1.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=0.0);
+    depth=-2.0);
 instructMainTask_keyResp = keyboard.Keyboard()
 
 # --- Initialize components for Routine "surpriseTask" ---
@@ -823,6 +853,106 @@ instructsurpA2_left = visual.TextStim(win=win, name='instructsurpA2_left',
     languageStyle='LTR',
     depth=-2.0);
 surprise_key_resp = keyboard.Keyboard()
+
+# --- Initialize components for Routine "redCap3" ---
+redCap3_text = visual.TextStim(win=win, name='redCap3_text',
+    text="\nPlease return to the questionnaires tab of your browser and answer the questions of a questionnaire.\n\nPlease do not close this tab as you will need to return to this tab after you complete answering the questions of the questionnaire. \n\n-----------------------------------------\n\nDid you answer the questions of the questionnaire?\n\nIf yes, please press the 'K' key to continue\n",
+    font='Open Sans',
+    pos=(0, 0), height=0.04, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+redcap1_key_2 = keyboard.Keyboard()
+
+# --- Initialize components for Routine "zoomTransfer1" ---
+headerZoom6 = visual.TextStim(win=win, name='headerZoom6',
+    text='Share Zoom Video',
+    font='Arial',
+    pos=(0, 0.3), height=0.08, wrapWidth=1.1, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+zoomTransferText1 = visual.TextStim(win=win, name='zoomTransferText1',
+    text='Stop recording on Zoom now.\n\nHit the ESC key (just once!) to make the floating meeting controls visible again.\n\nClick More (⋅⋅⋅) at the far right of the meeting controls, then select “End Meeting.”\n\nWhen prompted, “End Meeting for All.”',
+    font='Arial',
+    pos=(-0.3, 0.05), height=0.03, wrapWidth=0.6, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-1.0);
+endMeeting = visual.ImageStim(
+    win=win,
+    name='endMeeting', 
+    image='resources/zoom/end-meeting.jpg', mask=None, anchor='center',
+    ori=0.0, pos=(0.3, -0.05), size=(0.3, 0.465),
+    color=[1,1,1], colorSpace='rgb', opacity=None,
+    flipHoriz=False, flipVert=False,
+    texRes=512.0, interpolate=True, depth=-2.0)
+endMeetingPrompt = visual.ImageStim(
+    win=win,
+    name='endMeetingPrompt', 
+    image='resources/zoom/end-meeting-prompt.jpg', mask=None, anchor='center',
+    ori=0.0, pos=(-0.3, -0.2), size=(0.2, 0.11),
+    color=[1,1,1], colorSpace='rgb', opacity=None,
+    flipHoriz=False, flipVert=False,
+    texRes=512.0, interpolate=True, depth=-3.0)
+key_resp_31 = keyboard.Keyboard()
+instructContinue15 = visual.TextStim(win=win, name='instructContinue15',
+    text='- — -\n\nPress the space key to continue.',
+    font='Arial',
+    pos=(0, -0.35), height=0.02, wrapWidth=1.1, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-5.0);
+
+# --- Initialize components for Routine "zoomTransfer2" ---
+zoomTransferText2 = visual.TextStim(win=win, name='zoomTransferText2',
+    text='Follow any prompts from Zoom to allow it access to your Documents.\n\nYou should see several files, including an .m4a and an .mp4 file.\n\nRename both files to be identical to the letters and numbers of your FIU student e-mail before the @ symbol.\n\n\nExample:\ntpain001.mp4\ntpain001.m4a',
+    font='Arial',
+    pos=(0, -0.05), height=0.03, wrapWidth=1.1, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+instructContinue16 = visual.TextStim(win=win, name='instructContinue16',
+    text='- — -\n\nPress the space key when your two files are renamed.',
+    font='Arial',
+    pos=(0, -0.35), height=0.02, wrapWidth=1.1, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-1.0);
+key_resp_32 = keyboard.Keyboard()
+
+# --- Initialize components for Routine "zoomTransfer3" ---
+zoomTransferText3 = visual.TextStim(win=win, name='zoomTransferText3',
+    text='Log on to Google Drive using your FIU student credentials.\n\nUpload both files to your own Google Drive space.\n\nRight-click the .mp4 file and select “Share.”\n\nType ndc.laboratory.b@gmail.com into the space that says “Add people and groups”.\n\nRepeat for the .m4a file.',
+    font='Arial',
+    pos=(-0.3, 0.05), height=0.03, wrapWidth=0.6, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+share = visual.ImageStim(
+    win=win,
+    name='share', 
+    image='resources/zoom/share.jpg', mask=None, anchor='center',
+    ori=0.0, pos=(0.3, 0.1), size=(0.25, 0.149),
+    color=[1,1,1], colorSpace='rgb', opacity=None,
+    flipHoriz=False, flipVert=False,
+    texRes=512.0, interpolate=True, depth=-1.0)
+shareField = visual.ImageStim(
+    win=win,
+    name='shareField', 
+    image='resources/zoom/share-field.jpg', mask=None, anchor='center',
+    ori=0.0, pos=(0.3, -0.1), size=(0.25, 0.048),
+    color=[1,1,1], colorSpace='rgb', opacity=None,
+    flipHoriz=False, flipVert=False,
+    texRes=512.0, interpolate=True, depth=-2.0)
+instructContinue17 = visual.TextStim(win=win, name='instructContinue17',
+    text='- — -\n\nPress the space key when you have shared both files with ndc.laboratory.b@gmail.com.',
+    font='Arial',
+    pos=(0, -0.35), height=0.02, wrapWidth=1.1, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-3.0);
+key_resp_33 = keyboard.Keyboard()
 
 # --- Initialize components for Routine "finishMessage" ---
 finishMessage_text = visual.TextStim(win=win, name='finishMessage_text',
@@ -2805,6 +2935,103 @@ for thisPrac_block_loop in prac_block_loop:
 # completed 0 repeats of 'prac_block_loop'
 
 
+# --- Prepare to start Routine "redCap1" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+redcap1_key.keys = []
+redcap1_key.rt = []
+_redcap1_key_allKeys = []
+# keep track of which components have finished
+redCap1Components = [redCap1_text, redcap1_key]
+for thisComponent in redCap1Components:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "redCap1" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *redCap1_text* updates
+    if redCap1_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        redCap1_text.frameNStart = frameN  # exact frame index
+        redCap1_text.tStart = t  # local t and not account for scr refresh
+        redCap1_text.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(redCap1_text, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'redCap1_text.started')
+        redCap1_text.setAutoDraw(True)
+    
+    # *redcap1_key* updates
+    waitOnFlip = False
+    if redcap1_key.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        redcap1_key.frameNStart = frameN  # exact frame index
+        redcap1_key.tStart = t  # local t and not account for scr refresh
+        redcap1_key.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(redcap1_key, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'redcap1_key.started')
+        redcap1_key.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(redcap1_key.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(redcap1_key.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if redcap1_key.status == STARTED and not waitOnFlip:
+        theseKeys = redcap1_key.getKeys(keyList=['k'], waitRelease=False)
+        _redcap1_key_allKeys.extend(theseKeys)
+        if len(_redcap1_key_allKeys):
+            redcap1_key.keys = _redcap1_key_allKeys[-1].name  # just the last key pressed
+            redcap1_key.rt = _redcap1_key_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in redCap1Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "redCap1" ---
+for thisComponent in redCap1Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if redcap1_key.keys in ['', [], None]:  # No response was made
+    redcap1_key.keys = None
+thisExp.addData('redcap1_key.keys',redcap1_key.keys)
+if redcap1_key.keys != None:  # we had a response
+    thisExp.addData('redcap1_key.rt', redcap1_key.rt)
+thisExp.nextEntry()
+# the Routine "redCap1" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
 # set up handler to look after randomisation of conditions etc
 task_block_loop = data.TrialHandler(nReps=0.0, method='random', 
     extraInfo=expInfo, originPath=-1,
@@ -3893,6 +4120,103 @@ thisExp.nextEntry()
 # the Routine "botherRate" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
+# --- Prepare to start Routine "redCap2" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+redcap2_key.keys = []
+redcap2_key.rt = []
+_redcap2_key_allKeys = []
+# keep track of which components have finished
+redCap2Components = [redCap2_tex, redcap2_key]
+for thisComponent in redCap2Components:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "redCap2" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *redCap2_tex* updates
+    if redCap2_tex.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        redCap2_tex.frameNStart = frameN  # exact frame index
+        redCap2_tex.tStart = t  # local t and not account for scr refresh
+        redCap2_tex.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(redCap2_tex, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'redCap2_tex.started')
+        redCap2_tex.setAutoDraw(True)
+    
+    # *redcap2_key* updates
+    waitOnFlip = False
+    if redcap2_key.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        redcap2_key.frameNStart = frameN  # exact frame index
+        redcap2_key.tStart = t  # local t and not account for scr refresh
+        redcap2_key.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(redcap2_key, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'redcap2_key.started')
+        redcap2_key.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(redcap2_key.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(redcap2_key.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if redcap2_key.status == STARTED and not waitOnFlip:
+        theseKeys = redcap2_key.getKeys(keyList=['k'], waitRelease=False)
+        _redcap2_key_allKeys.extend(theseKeys)
+        if len(_redcap2_key_allKeys):
+            redcap2_key.keys = _redcap2_key_allKeys[-1].name  # just the last key pressed
+            redcap2_key.rt = _redcap2_key_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in redCap2Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "redCap2" ---
+for thisComponent in redCap2Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if redcap2_key.keys in ['', [], None]:  # No response was made
+    redcap2_key.keys = None
+thisExp.addData('redcap2_key.keys',redcap2_key.keys)
+if redcap2_key.keys != None:  # we had a response
+    thisExp.addData('redcap2_key.rt', redcap2_key.rt)
+thisExp.nextEntry()
+# the Routine "redCap2" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
 # --- Prepare to start Routine "surpriseInstruct" ---
 continueRoutine = True
 routineForceEnded = False
@@ -4011,12 +4335,34 @@ for thisSurprise_block_loop in surprise_block_loop:
     continueRoutine = True
     routineForceEnded = False
     # update component parameters for each repeat
+    # Run 'Begin Routine' code from code_5
+    surp_blockCounter = surp_blockCounter + 1
+    
+    if surp_blockCounter == 1:
+        surp_blockNumText = 'Block 1 of 8'
+    elif surp_blockCounter == 2:
+        surp_blockNumText = 'Block 2 of 8'
+    elif surp_blockCounter == 3:
+        surp_blockNumText = 'Block 3 of 8'
+    elif surp_blockCounter == 4:
+        surp_blockNumText = 'Block 4 of 8'
+    elif surp_blockCounter == 5:
+        surp_blockNumText = 'Block 5 of 8'
+    elif surp_blockCounter == 6:
+        surp_blockNumText = 'Block 6 of 8'
+    elif surp_blockCounter == 7:
+        surp_blockNumText = 'Block 7 of 8'
+    elif surp_blockCounter == 8:
+        surp_blockNumText = 'Block 8 of 8'
+    
+        
+    task_blockText_2.setText(surp_blockNumText)
     instructMainTask_text.setText(taskTextSource)
     instructMainTask_keyResp.keys = []
     instructMainTask_keyResp.rt = []
     _instructMainTask_keyResp_allKeys = []
     # keep track of which components have finished
-    instructSurpriseTask2_2Components = [instructMainTask_text, instructMainTask_keyResp]
+    instructSurpriseTask2_2Components = [task_blockText_2, instructMainTask_text, instructMainTask_keyResp]
     for thisComponent in instructSurpriseTask2_2Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -4037,6 +4383,17 @@ for thisSurprise_block_loop in surprise_block_loop:
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
+        
+        # *task_blockText_2* updates
+        if task_blockText_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            task_blockText_2.frameNStart = frameN  # exact frame index
+            task_blockText_2.tStart = t  # local t and not account for scr refresh
+            task_blockText_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(task_blockText_2, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'task_blockText_2.started')
+            task_blockText_2.setAutoDraw(True)
         
         # *instructMainTask_text* updates
         if instructMainTask_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -4252,6 +4609,482 @@ for thisSurprise_block_loop in surprise_block_loop:
     
 # completed 1.0 repeats of 'surprise_block_loop'
 
+
+# --- Prepare to start Routine "redCap3" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+redcap1_key_2.keys = []
+redcap1_key_2.rt = []
+_redcap1_key_2_allKeys = []
+# keep track of which components have finished
+redCap3Components = [redCap3_text, redcap1_key_2]
+for thisComponent in redCap3Components:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "redCap3" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *redCap3_text* updates
+    if redCap3_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        redCap3_text.frameNStart = frameN  # exact frame index
+        redCap3_text.tStart = t  # local t and not account for scr refresh
+        redCap3_text.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(redCap3_text, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'redCap3_text.started')
+        redCap3_text.setAutoDraw(True)
+    
+    # *redcap1_key_2* updates
+    waitOnFlip = False
+    if redcap1_key_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        redcap1_key_2.frameNStart = frameN  # exact frame index
+        redcap1_key_2.tStart = t  # local t and not account for scr refresh
+        redcap1_key_2.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(redcap1_key_2, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'redcap1_key_2.started')
+        redcap1_key_2.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(redcap1_key_2.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(redcap1_key_2.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if redcap1_key_2.status == STARTED and not waitOnFlip:
+        theseKeys = redcap1_key_2.getKeys(keyList=['k'], waitRelease=False)
+        _redcap1_key_2_allKeys.extend(theseKeys)
+        if len(_redcap1_key_2_allKeys):
+            redcap1_key_2.keys = _redcap1_key_2_allKeys[-1].name  # just the last key pressed
+            redcap1_key_2.rt = _redcap1_key_2_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in redCap3Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "redCap3" ---
+for thisComponent in redCap3Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if redcap1_key_2.keys in ['', [], None]:  # No response was made
+    redcap1_key_2.keys = None
+thisExp.addData('redcap1_key_2.keys',redcap1_key_2.keys)
+if redcap1_key_2.keys != None:  # we had a response
+    thisExp.addData('redcap1_key_2.rt', redcap1_key_2.rt)
+thisExp.nextEntry()
+# the Routine "redCap3" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# --- Prepare to start Routine "zoomTransfer1" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+key_resp_31.keys = []
+key_resp_31.rt = []
+_key_resp_31_allKeys = []
+# keep track of which components have finished
+zoomTransfer1Components = [headerZoom6, zoomTransferText1, endMeeting, endMeetingPrompt, key_resp_31, instructContinue15]
+for thisComponent in zoomTransfer1Components:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "zoomTransfer1" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *headerZoom6* updates
+    if headerZoom6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        headerZoom6.frameNStart = frameN  # exact frame index
+        headerZoom6.tStart = t  # local t and not account for scr refresh
+        headerZoom6.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(headerZoom6, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'headerZoom6.started')
+        headerZoom6.setAutoDraw(True)
+    
+    # *zoomTransferText1* updates
+    if zoomTransferText1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        zoomTransferText1.frameNStart = frameN  # exact frame index
+        zoomTransferText1.tStart = t  # local t and not account for scr refresh
+        zoomTransferText1.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(zoomTransferText1, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'zoomTransferText1.started')
+        zoomTransferText1.setAutoDraw(True)
+    
+    # *endMeeting* updates
+    if endMeeting.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        endMeeting.frameNStart = frameN  # exact frame index
+        endMeeting.tStart = t  # local t and not account for scr refresh
+        endMeeting.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(endMeeting, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'endMeeting.started')
+        endMeeting.setAutoDraw(True)
+    
+    # *endMeetingPrompt* updates
+    if endMeetingPrompt.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        endMeetingPrompt.frameNStart = frameN  # exact frame index
+        endMeetingPrompt.tStart = t  # local t and not account for scr refresh
+        endMeetingPrompt.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(endMeetingPrompt, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'endMeetingPrompt.started')
+        endMeetingPrompt.setAutoDraw(True)
+    
+    # *key_resp_31* updates
+    waitOnFlip = False
+    if key_resp_31.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_31.frameNStart = frameN  # exact frame index
+        key_resp_31.tStart = t  # local t and not account for scr refresh
+        key_resp_31.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_31, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'key_resp_31.started')
+        key_resp_31.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_31.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_31.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_31.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_31.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_31_allKeys.extend(theseKeys)
+        if len(_key_resp_31_allKeys):
+            key_resp_31.keys = _key_resp_31_allKeys[-1].name  # just the last key pressed
+            key_resp_31.rt = _key_resp_31_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # *instructContinue15* updates
+    if instructContinue15.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        instructContinue15.frameNStart = frameN  # exact frame index
+        instructContinue15.tStart = t  # local t and not account for scr refresh
+        instructContinue15.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(instructContinue15, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'instructContinue15.started')
+        instructContinue15.setAutoDraw(True)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in zoomTransfer1Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "zoomTransfer1" ---
+for thisComponent in zoomTransfer1Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_31.keys in ['', [], None]:  # No response was made
+    key_resp_31.keys = None
+thisExp.addData('key_resp_31.keys',key_resp_31.keys)
+if key_resp_31.keys != None:  # we had a response
+    thisExp.addData('key_resp_31.rt', key_resp_31.rt)
+thisExp.nextEntry()
+# the Routine "zoomTransfer1" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# --- Prepare to start Routine "zoomTransfer2" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+key_resp_32.keys = []
+key_resp_32.rt = []
+_key_resp_32_allKeys = []
+# keep track of which components have finished
+zoomTransfer2Components = [zoomTransferText2, instructContinue16, key_resp_32]
+for thisComponent in zoomTransfer2Components:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "zoomTransfer2" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *zoomTransferText2* updates
+    if zoomTransferText2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        zoomTransferText2.frameNStart = frameN  # exact frame index
+        zoomTransferText2.tStart = t  # local t and not account for scr refresh
+        zoomTransferText2.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(zoomTransferText2, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'zoomTransferText2.started')
+        zoomTransferText2.setAutoDraw(True)
+    
+    # *instructContinue16* updates
+    if instructContinue16.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        instructContinue16.frameNStart = frameN  # exact frame index
+        instructContinue16.tStart = t  # local t and not account for scr refresh
+        instructContinue16.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(instructContinue16, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'instructContinue16.started')
+        instructContinue16.setAutoDraw(True)
+    
+    # *key_resp_32* updates
+    waitOnFlip = False
+    if key_resp_32.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_32.frameNStart = frameN  # exact frame index
+        key_resp_32.tStart = t  # local t and not account for scr refresh
+        key_resp_32.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_32, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'key_resp_32.started')
+        key_resp_32.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_32.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_32.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_32.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_32.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_32_allKeys.extend(theseKeys)
+        if len(_key_resp_32_allKeys):
+            key_resp_32.keys = _key_resp_32_allKeys[-1].name  # just the last key pressed
+            key_resp_32.rt = _key_resp_32_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in zoomTransfer2Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "zoomTransfer2" ---
+for thisComponent in zoomTransfer2Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_32.keys in ['', [], None]:  # No response was made
+    key_resp_32.keys = None
+thisExp.addData('key_resp_32.keys',key_resp_32.keys)
+if key_resp_32.keys != None:  # we had a response
+    thisExp.addData('key_resp_32.rt', key_resp_32.rt)
+thisExp.nextEntry()
+# the Routine "zoomTransfer2" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# --- Prepare to start Routine "zoomTransfer3" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+key_resp_33.keys = []
+key_resp_33.rt = []
+_key_resp_33_allKeys = []
+# keep track of which components have finished
+zoomTransfer3Components = [zoomTransferText3, share, shareField, instructContinue17, key_resp_33]
+for thisComponent in zoomTransfer3Components:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "zoomTransfer3" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *zoomTransferText3* updates
+    if zoomTransferText3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        zoomTransferText3.frameNStart = frameN  # exact frame index
+        zoomTransferText3.tStart = t  # local t and not account for scr refresh
+        zoomTransferText3.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(zoomTransferText3, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'zoomTransferText3.started')
+        zoomTransferText3.setAutoDraw(True)
+    
+    # *share* updates
+    if share.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        share.frameNStart = frameN  # exact frame index
+        share.tStart = t  # local t and not account for scr refresh
+        share.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(share, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'share.started')
+        share.setAutoDraw(True)
+    
+    # *shareField* updates
+    if shareField.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        shareField.frameNStart = frameN  # exact frame index
+        shareField.tStart = t  # local t and not account for scr refresh
+        shareField.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(shareField, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'shareField.started')
+        shareField.setAutoDraw(True)
+    
+    # *instructContinue17* updates
+    if instructContinue17.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        instructContinue17.frameNStart = frameN  # exact frame index
+        instructContinue17.tStart = t  # local t and not account for scr refresh
+        instructContinue17.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(instructContinue17, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'instructContinue17.started')
+        instructContinue17.setAutoDraw(True)
+    
+    # *key_resp_33* updates
+    waitOnFlip = False
+    if key_resp_33.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_33.frameNStart = frameN  # exact frame index
+        key_resp_33.tStart = t  # local t and not account for scr refresh
+        key_resp_33.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_33, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'key_resp_33.started')
+        key_resp_33.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_33.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_33.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_33.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_33.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_33_allKeys.extend(theseKeys)
+        if len(_key_resp_33_allKeys):
+            key_resp_33.keys = _key_resp_33_allKeys[-1].name  # just the last key pressed
+            key_resp_33.rt = _key_resp_33_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in zoomTransfer3Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "zoomTransfer3" ---
+for thisComponent in zoomTransfer3Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_33.keys in ['', [], None]:  # No response was made
+    key_resp_33.keys = None
+thisExp.addData('key_resp_33.keys',key_resp_33.keys)
+if key_resp_33.keys != None:  # we had a response
+    thisExp.addData('key_resp_33.rt', key_resp_33.rt)
+thisExp.nextEntry()
+# the Routine "zoomTransfer3" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 # --- Prepare to start Routine "finishMessage" ---
 continueRoutine = True
